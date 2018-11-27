@@ -19,4 +19,8 @@ class Bus
   def bus_pickup(person)
     @passengers << person
   end
+
+  def drop_off
+    @passengers.pop
+  end
 end
