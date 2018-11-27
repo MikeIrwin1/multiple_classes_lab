@@ -11,4 +11,8 @@ class Bus
   def drive
     return "Brum brum"
   end
+
+  def passenger_count
+    return @passengers.count
+  end
 end
