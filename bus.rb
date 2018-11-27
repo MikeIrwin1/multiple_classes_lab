@@ -23,4 +23,8 @@ class Bus
   def drop_off
     @passengers.pop
   end
+
+  def bus_empty
+    @passengers.clear
+  end
 end
