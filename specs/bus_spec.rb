@@ -7,10 +7,12 @@ require_relative("../bus")
 
 class BusTest < MiniTest::Test
   def setup
+    @bus = Bus.new(31)
+
   end
 
-  def test_bus_route
-  assert_equals(31,@bus.route)
+  def test_bus_route_no
+    assert_equal(31,@bus.route_no)
   end
 
 
