@@ -27,4 +27,9 @@ class Bus
   def bus_empty
     @passengers.clear
   end
+
+  def pick_up_from_stop(busstop)
+
+    p  @passengers.concat(busstop.queue)
+  end
 end

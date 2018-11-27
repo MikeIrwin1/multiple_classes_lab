@@ -3,6 +3,7 @@ require("minitest/rg")
 
 require_relative("../busstop")
 require_relative("../person")
+require_relative("../bus")
 
 class BusStopTest < MiniTest::Test
 
@@ -21,9 +22,9 @@ class BusStopTest < MiniTest::Test
   end
 
   def test_add_to_queue
-
-    @busstop.add_to_queue(@passenger_1)  
-
+    @busstop.add_to_queue(@passenger_1)
     assert_equal(1,@busstop.queue.count)
   end
+
+
 end
